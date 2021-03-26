@@ -1,6 +1,8 @@
 import React, { useState } from "react";
 import { authService } from "fbase";
 
+const inputStyles = {};
+
 const AuthForm = () => {
   const [email, setEmail] = useState("");
   const [password, setPassword] = useState("");
@@ -28,7 +30,6 @@ const AuthForm = () => {
       } else {
         data = await authService.signInWithEmailAndPassword(email, password);
       }
-      console.log(data);
     } catch (error) {
       setError(error.message);
     }
@@ -36,7 +37,7 @@ const AuthForm = () => {
   const toggleAccount = () => setNewAccount((prev) => !prev);
   return (
     <>
-      <form onSubmit={onSubmit}>
+      <form onSubmit={onSubmit} className="container">
         <input
           name="email"
           type="email"
@@ -44,6 +45,7 @@ const AuthForm = () => {
           required
           value={email}
           onChange={onChange}
+          className="authInput"
         />
         <input
           name="password"
@@ -52,14 +54,16 @@ const AuthForm = () => {
           required
           value={password}
           onChange={onChange}
+          className="authInput"
         />
         <input
           type="submit"
+          className="authInput authSubmit"
           value={newAccount ? "Create Account" : "Sign In"}
         />
-        {error}
+        {error && <span className="authError">{error}</span>}
       </form>
-      <span onClick={toggleAccount}>
+      <span onClick={toggleAccount} className="authSwitch">
         {newAccount ? "Sign In" : "Create Account"}
       </span>
     </>
