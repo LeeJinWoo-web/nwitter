@@ -30,6 +30,7 @@ function App() {
   }
   const branchTest = () => {
     console.log('change branch master')
+    console.log('change branch master2')
   }
     return (
       <>
