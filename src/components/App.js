@@ -30,6 +30,9 @@ function App() {
   }
   const loadBranch = () => {
     console.log("branch test");
+    console.log("branch test");
+    console.log("branch test");
+    console.log("branch test");
   }
     return (
       <>
