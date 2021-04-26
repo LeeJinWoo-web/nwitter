@@ -40,6 +40,9 @@ function App() {
     console.log('change branch master3')
 
   }
+    const branchKarl = () => {
+        console.log("branchKarl")
+    }
     return (
       <>
       {init ? <AppRouter refreshUser={refreshUser} isLoggedIn={Boolean(userObj)} userObj={userObj}/> : "initializing..." }
