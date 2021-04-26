@@ -30,6 +30,7 @@ function App() {
   }
   const karlBranch = ()=> {
     console.log('karl branch1')
+    console.log('karl branch2')
   }
     return (
       <>
