@@ -28,6 +28,12 @@ function App() {
       updateProfile: (args) => {user.updateProfile(args)}
     });
   }
+  
+  const branchTest2 = () => {
+    console.log('change branch master')
+    console.log('change branch master2')
+    console.log('change branch master3')
+  }
   const branchTest = () => {
     console.log('change branch master')
     console.log('change branch master2')
