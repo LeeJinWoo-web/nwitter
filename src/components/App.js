@@ -28,6 +28,9 @@ function App() {
       updateProfile: (args) => {user.updateProfile(args)}
     });
   }
+  const loadBranch = () => {
+    console.log("branch test");
+  }
     return (
       <>
       {init ? <AppRouter refreshUser={refreshUser} isLoggedIn={Boolean(userObj)} userObj={userObj}/> : "initializing..." }
