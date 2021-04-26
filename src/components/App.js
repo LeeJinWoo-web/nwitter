@@ -28,11 +28,9 @@ function App() {
       updateProfile: (args) => {user.updateProfile(args)}
     });
   }
-  const karlBranch = ()=> {
-    console.log('karl branch1')
-    console.log('karl branch2')
-    console.log('karl branch3')
-  }
+    const branchKarl = () => {
+        console.log("branchKarl")
+    }
     return (
       <>
       {init ? <AppRouter refreshUser={refreshUser} isLoggedIn={Boolean(userObj)} userObj={userObj}/> : "initializing..." }
