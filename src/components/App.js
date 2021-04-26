@@ -33,6 +33,9 @@ function App() {
     console.log("branch test");
     console.log("branch test");
     console.log("branch test");
+    console.log("branch test");
+    console.log("branch test");
+    console.log("branch test");
   }
     return (
       <>
