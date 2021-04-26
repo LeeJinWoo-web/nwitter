@@ -28,14 +28,8 @@ function App() {
       updateProfile: (args) => {user.updateProfile(args)}
     });
   }
-  const loadBranch = () => {
-    console.log("branch test");
-    console.log("branch test");
-    console.log("branch test");
-    console.log("branch test");
-    console.log("branch test");
-    console.log("branch test");
-    console.log("branch test");
+  const branchTest = () => {
+    console.log('change branch master')
   }
     return (
       <>
